@@ -17,7 +17,7 @@ create table opcina(
 );
 
 
-3
+
 
 alter table opcina add foreign key (zupanija) references zupanija(sifra);
 
