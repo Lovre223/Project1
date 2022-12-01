@@ -7,7 +7,7 @@ create table djelo(
     sifra int not null primary key auto_increment,
     naziv varchar(50),
     autor varchar(50),
-    broj_stranica int
+    brojstranica int
 
 );
 
