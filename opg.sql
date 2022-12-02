@@ -23,11 +23,9 @@ create table djelatnik(
     ime varchar(50),
     prezime varchar(50),
     oib varchar(11),
-    iban varchar(16)
-);
-
-
-
+    iban varchar(50),
+    
+#ispravljena greska    
 create table proizvod_sirovina(
     proizvod int,
     sirovina int
