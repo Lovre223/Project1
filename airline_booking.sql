@@ -5,6 +5,7 @@ use airline_booking;
 
 create table let(
     sifra int not null primary key auto_increment,
+    br_leta int,
     vrijeme_polaska datetime,
     vrijeme_dolaska datetime,
     cijena decimal(18,2),
@@ -41,8 +42,7 @@ create table korisnik (
 create table rezervacija(
     sifra int not null primary key auto_increment,
     let int,
-    korisnik int,
-    aviokompanija int
+    korisnik int
 
 );
 
