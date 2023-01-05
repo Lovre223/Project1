@@ -14,30 +14,79 @@ public class Z05 {
 		
 		int mat1[][] = new int[red][stupac];
 		
-			for (int i = 0   ; i <= red - 1;i++) {
+		int PrviRed = 0;
+		int ZadnjiRed = red - 1;
+		
+		
+		int PrviStupac = 0;
+		int ZadnjiStupac = stupac - 1;
+		
+		
+		int polje = 1;
+		
+		while (polje<= red*stupac) {
+			
+			for (int i = ZadnjiStupac ; i>=PrviStupac; i--  ) {
 				
-				for (int j = stupac - 1 ; j >= 0;j--) {
-					
-					
-					
-					
-					mat1[i][j] = j + 1 ;
-					
-					
-					
-					
-					
-					
-				}
+				mat1[ZadnjiRed][i] = polje++;
 				
-				
-				
-				System.out.println();
 			}
 			
+			for (int i = ZadnjiRed - 1; i>=PrviRed; i-- ) {
+				
+				mat1[i][PrviStupac] = polje++; 
+				
+			}
+			
+			for (int i = PrviStupac + 1; i<=ZadnjiStupac; i++) {
+				
+				mat1[PrviRed][i] = polje++;
+				
+				
+			}
+			
+			for(int i = PrviRed; i<=ZadnjiRed - 1; i++) {
+				
+				mat1[i][ZadnjiStupac] = polje ++;
+				
+				
+			}
+			
+			if (polje>red*stupac) {
+				
+				break;
+			}
+			
+			ZadnjiRed = ZadnjiRed - 1;
+			ZadnjiStupac = ZadnjiStupac - 1;
+			
+			PrviStupac = PrviStupac + 1;
+			PrviRed = PrviRed + 1;
 			
 			
-		System.out.print(Arrays.deepToString(mat1));
+			
+			
+		}
+		
+		
+		for (int i = 0; i < red;i++) {
+			
+			for (int j = 0;j<stupac;j++) {
+				
+				System.out.print(mat1[i][j] + " ");
+				
+			}
+			
+			System.out.println();
+			
+			
+		}
+		
+		
+		
+			
+			
+		
 		
 	}
 	
