@@ -32,30 +32,29 @@ public class Z05 {
 				
 			}
 			
+			
 			for (int i = ZadnjiRed - 1; i>=PrviRed; i-- ) {
 				
 				mat1[i][PrviStupac] = polje++; 
 				
 			}
 			
-			for (int i = PrviStupac + 1; i<=ZadnjiStupac; i++) {
+			for (int i = PrviStupac + 1 ; i <= ZadnjiStupac  ; i++) {
 				
 				mat1[PrviRed][i] = polje++;
 				
 				
 			}
 			
-			for(int i = PrviRed; i<=ZadnjiRed - 1; i++) {
+			for(int i = PrviRed + 1 ; i<=ZadnjiRed - 1 ; i++) {
 				
 				mat1[i][ZadnjiStupac] = polje ++;
 				
 				
 			}
 			
-			if (polje>red*stupac) {
-				
-				break;
-			}
+			
+			
 			
 			ZadnjiRed = ZadnjiRed - 1;
 			ZadnjiStupac = ZadnjiStupac - 1;
@@ -73,7 +72,7 @@ public class Z05 {
 			
 			for (int j = 0;j<stupac;j++) {
 				
-				System.out.print(mat1[i][j] + " ");
+				System.out.print(mat1[i][j] + " \t ");
 				
 			}
 			
