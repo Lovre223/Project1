@@ -9,19 +9,44 @@ public class Z03 {
 	 
 	 int b = Integer.parseInt(JOptionPane.showInputDialog("Unesi drugi broj: "));
 	 
-		int min = a<b ? a:b;
-		int max = a>b ? a:b;
+	
 	 
-	 for (int i = min; i<max;i++) {
-		 
-		 	if(i%2 != 0) {
-		 		
-		 		System.out.println(i);
-		 	}
-		 
-	 }
 		
-		
-	}
+	 for (int i = a; i<b;i++) {
+		 
+		int brojac = 0;
+		 
+		 for (int j = 2 ; j<i;j++) {
+			 
+			  if (i%j == 0) {
+				  
+				  brojac ++;
+				  break;
+				  
+				  }
+	    
+	
+			  
 
-}
+	}
+		 if (brojac == 0) {
+			 
+			 System.out.println(i);
+			 
+		 }
+		 
+			  
+			   }
+			  
+		     }   
+	 
+		 
+	     }	
+	 
+		 
+
+		
+		
+	
+
+

@@ -1,5 +1,8 @@
 package vjezba;
 
+
+
+// PRIKAZ SVIH INTEGERA IZMEĐU 100 I 150 ČIJA SUMA ZNAMENKI JE PARAN BROJ
 public class vjezba12 {
 
 	public static void main(String[] args) {
