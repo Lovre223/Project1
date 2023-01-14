@@ -10,8 +10,6 @@ public class Z03 {
 	 int b = Integer.parseInt(JOptionPane.showInputDialog("Unesi drugi broj: "));
 	 
 	
-	 boolean prim = true;
-		
 	 for (int i = a; i<b;i++) {
 		 
 		int brojac = 0;
@@ -20,7 +18,7 @@ public class Z03 {
 			 
 			  if (i%j == 0) {
 				  
-				  prim = false;
+				  brojac ++;
 				  break;
 				  
 				  }
@@ -29,7 +27,7 @@ public class Z03 {
 			  
 
 	}
-		 if (prim) {
+		 if (brojac == 2) {
 			 
 			 System.out.println(i);
 			 
