@@ -9,18 +9,20 @@ public class Z03 {
 	 
 	 int b = Integer.parseInt(JOptionPane.showInputDialog("Unesi drugi broj: "));
 	 
-	
-	 for (int i = a; i<b;i++) {
+	 
+	 
+	 for (int i = a; i<=b;i++) {
 		 
 		int brojac = 0;
 		 
-		 for (int j = 2 ; j<i;j++) {
+		 for (int j = 1 ; j<=i;j++) {
 			 
 			  if (i%j == 0) {
 				  
 				  brojac ++;
-				  break;
-				  
+				
+				 
+				 
 				  }
 	    
 	
