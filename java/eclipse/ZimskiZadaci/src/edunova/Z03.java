@@ -20,9 +20,7 @@ public class Z03 {
 			  if (i%j == 0) {
 				  
 				  brojac ++;
-				
-				 
-				 
+							 
 				  }
 	    
 	

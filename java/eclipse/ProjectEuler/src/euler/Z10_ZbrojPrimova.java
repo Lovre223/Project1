@@ -8,7 +8,7 @@ public class Z10_ZbrojPrimova {
 
 		long suma = 0;
 		
-		  for( int i = 2 ; i <=10  ; i++) {
+		  for( int i = 2 ; i <=2000000  ; i++) {
 			  if(Z10_ZbrojPrimova.prim(i)) {
 				  
 				  suma = suma + i;
