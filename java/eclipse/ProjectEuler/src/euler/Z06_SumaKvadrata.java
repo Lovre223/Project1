@@ -1,6 +1,6 @@
 package euler;
 
-public class Z06 {
+public class Z06_SumaKvadrata {
 	
 	
 	public static void main(String[] args) {
