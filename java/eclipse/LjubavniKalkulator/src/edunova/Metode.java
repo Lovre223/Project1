@@ -46,4 +46,13 @@ public class Metode {
 	
 	
 
+		
+		
+		
+		
+	}
+	
+	
+	
+
 }
