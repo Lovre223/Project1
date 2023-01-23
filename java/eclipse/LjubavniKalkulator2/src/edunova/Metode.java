@@ -94,7 +94,7 @@ public class Metode {
 		}
 
 	}
-	
+
 	public static int[] makniViseznamenkaste(int[] unos) {
 		int counter = 0;
 		for (int i : unos) {
@@ -115,10 +115,6 @@ public class Metode {
 		}
 
 		return bezViseznamenkastih;
-
-		
-
-	
 
 	}
 
