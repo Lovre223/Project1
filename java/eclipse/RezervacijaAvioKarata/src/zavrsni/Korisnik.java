@@ -4,7 +4,6 @@ public class Korisnik extends Entitet {
 
 	private String ime;
 	private String prezime;
-	private String broj_kartice;
 	private String oib;
 	private String adresa;
 	private String email;
@@ -13,12 +12,10 @@ public class Korisnik extends Entitet {
 		super();
 	}
 
-	public Korisnik(int sifra, String ime, String prezime, String broj_kartice, String oib, String adresa,
-			String email) {
+	public Korisnik(int sifra, String ime, String prezime, String oib, String adresa, String email) {
 		super(sifra);
 		this.ime = ime;
 		this.prezime = prezime;
-		this.broj_kartice = broj_kartice;
 		this.oib = oib;
 		this.adresa = adresa;
 		this.email = email;
@@ -38,14 +35,6 @@ public class Korisnik extends Entitet {
 
 	public void setPrezime(String prezime) {
 		this.prezime = prezime;
-	}
-
-	public String getBroj_kartice() {
-		return broj_kartice;
-	}
-
-	public void setBroj_kartice(String broj_kartice) {
-		this.broj_kartice = broj_kartice;
 	}
 
 	public String getOib() {
