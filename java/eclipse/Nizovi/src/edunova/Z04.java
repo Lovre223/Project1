@@ -5,7 +5,7 @@ public class Z04 {
 
 		int niz[] = { 25, 38, 42, 3, 2, 23, 1 };
 
-		System.out.println(" 38 je na položaju " + pronadiIndex(niz, 38));
+		System.out.println("38 je na položaju " + pronadiIndex(niz, 38));
 		
 		
 		
