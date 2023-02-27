@@ -14,7 +14,7 @@ public class Z02_FibonacciParnihBrojeva {
 		int a = 1 , b = 0;
 		
 		
-	  while (a < 4000000) {
+	  while (a < 10) {
 		   suma1 = a + b;
 			
 			a = b ; 
