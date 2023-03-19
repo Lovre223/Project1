@@ -13,27 +13,29 @@ public class Z11_Sifra {
 		String rijec = ulaz.next();
 
 		System.out.println(sifrirano(rijec));
-		
+
 		System.out.println('a' + 5);
 
 	}
 
 	private static String sifrirano(String rijec) {
 
+		String novaRijec = rijec.toLowerCase();
+
 		String kodiranaRijec = "";
 
-		for (char slovo : rijec.toCharArray()) {
+		for (char slovo : novaRijec.toCharArray()) {
 
 			int rotacijaSlova = slovo + 5;
 
-				if(rotacijaSlova > 122) {
-					
-					kodiranaRijec += (char)(rotacijaSlova - 26);
-					
-				}else {
+			if (rotacijaSlova > 122) {
+
+				kodiranaRijec += (char) (rotacijaSlova - 26);
+
+			} else {
 
 				kodiranaRijec += (char) rotacijaSlova;
-				}
+			}
 		}
 
 		return kodiranaRijec;

@@ -1,5 +1,6 @@
 package edunova;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Z10_PalindromRijeci {
@@ -12,7 +13,7 @@ public class Z10_PalindromRijeci {
 		
 		System.out.println(rijec.length());
 
-		if (rijecJePalindrom(rijec)) {
+		if (rijecJePalindrom("tenet")) {
 
 			System.out.println("Riječ je pakindrom!!!");
 
@@ -28,15 +29,22 @@ public class Z10_PalindromRijeci {
 
 		int brojac = 0;
 
-		char niz[] = new char[rijec.length() + 1];
+		char niz[] = new char[rijec.length()];
 
-		for (int i = rijec.length() - 1; i > 0; i--) {
+		for (int i = rijec.length() - 1; i >= 0; i--) {
 
 			niz[i] = rijec.charAt(i);
 
 		}
+		
+		System.out.println(Arrays.toString(niz));
+		
+		System.out.println(niz.length);
+		System.out.println(rijec.length());
+		
+		
 
-		for (int i = 0, j = rijec.length() - 1; i < rijec.length(); i++, j--) {
+		for (int i = 0, j = rijec.length() - 1; i < rijec.length() - 1; i++, j--) {
 
 			if (niz[i] == rijec.charAt(j)) {
 
@@ -45,6 +53,8 @@ public class Z10_PalindromRijeci {
 			}
 
 		}
+		
+		System.out.println(brojac);
 
 		if (brojac == rijec.length() - 1) {
 
